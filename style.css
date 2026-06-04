@@ -1,5 +1,5 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #0f0f14;
   color: white;
   text-align: center;
@@ -8,6 +8,8 @@ body {
 
 .container {
   padding: 20px;
+  max-width: 700px;
+  margin: auto;
 }
 
 h1 {
@@ -16,49 +18,62 @@ h1 {
 
 .info {
   opacity: 0.7;
+  margin: 5px 0;
 }
 
 .card {
   background: #1c1c25;
   margin: 15px auto;
-  padding: 15px;
+  padding: 20px;
   border-radius: 12px;
-  max-width: 300px;
+  max-width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 button {
-  padding: 10px;
-  margin-top: 10px;
   width: 100%;
+  padding: 12px;
+  margin-top: 10px;
   border: none;
   border-radius: 8px;
   background: gold;
+  color: black;
+  font-weight: bold;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.95);
+  opacity: 0.8;
 }
 
 input {
   display: block;
   width: 90%;
+  max-width: 400px;
   margin: 10px auto;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 12px;
   border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .results {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .suggest {
-  margin-top: 30px;
-}
-#adminPanel {
-  margin-top: 40px;
-  padding: 20px;
-  background: #111;
-  border-top: 2px solid gold;
+  margin-top: 35px;
 }
 
-#adminPanel input {
-  margin: 5px;
+#msg {
+  margin-top: 20px;
+  font-weight: bold;
+  min-height: 24px;
+  color: #4caf50;
 }
