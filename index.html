@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="container">
+
+  <h1>🎬 Friday Movie Night</h1>
+
+  <p class="info">📍 Building 6 Smart Classroom</p>
+  <p class="info">🕡 Friday 18:30</p>
+
+  <div class="card">
+
+    <h2>Movie A</h2>
+    <p id="hintA">Loading...</p>
+    <button onclick="vote('A')">Vote A</button>
+
+  </div>
+
+  <div class="card">
+
+    <h2>Movie B</h2>
+    <p id="hintB">Loading...</p>
+    <button onclick="vote('B')">Vote B</button>
+
+  </div>
+
+  <div class="results">
+    <h2>📊 Live Results</h2>
+    <p id="results">Loading...</p>
+  </div>
+
+  <div class="suggest">
+
+    <h2>💡 Suggest a Movie</h2>
+
+    <input id="name" placeholder="Your name">
+    <input id="movie" placeholder="Movie suggestion">
+    <input id="reason" placeholder="Why?">
+
+    <button onclick="suggest()">Submit</button>
+
+  </div>
+
+  <p id="msg"></p>
+
+</div>
+<div id="adminPanel" style="display:none;">
+  <h2>🔐 Admin Sara Panel</h2>
+
+  <input id="adminPass" placeholder="Enter password">
+  <button onclick="login()">Login</button>
+
+  <div id="adminContent" style="display:none;">
+
+    <h3>🎬 Update Movie Hints</h3>
+
+    <input id="newHintA" placeholder="Hint A">
+    <input id="newHintB" placeholder="Hint B">
+
+    <button onclick="updateHints()">Save</button>
+
+    <h3>🗳 Votes</h3>
+    <div id="voteList"></div>
+
+    <h3>💡 Suggestions</h3>
+    <div id="suggestList"></div>
+
+  </div>
+</div>
+
+<button onclick="showAdmin()">Admin Sara</button>
+<button onclick="resetVotes()">Reset Votes</button>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
